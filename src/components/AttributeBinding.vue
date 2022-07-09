@@ -7,7 +7,8 @@ The :title syntax is short for v-bind:title.
 
 <template>
    <h2>
-      <a href="https://vuejs.org/examples/#attribute-bindings" target="new">{{title}}
+      <a href="https://vuejs.org/examples/#attribute-bindings" target="new">
+        Attribute Binding
       </a>
     </h2> 
   <p>

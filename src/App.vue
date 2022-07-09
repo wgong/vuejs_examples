@@ -1,9 +1,24 @@
 <template>
   <!--
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <UserInput title='Handling User Input'/>
+    <AttributeBinding />
+    <LoopsAndConditionals />
+    <UserInput />
+    <FormBindings />
+    <SimpleComponent />
+    <RandomUser />
+    <TodoMVC />
+        <SimpleCounter />
+            <TempConvertor />
+    <FlightBooker />
+        <SimpleTimer />
+      <SimpleCRUD />
   -->
-    <AttributeBinding title='Attribute Binding'/>
+    <CircleDrawer />
+    
+    
+
+    
 
 
 
@@ -15,18 +30,46 @@
 <script>
 /*
 import HelloWorld from './components/HelloWorld.vue'
-import UserInput from './components/UserInput.vue'
-*/
 import AttributeBinding from './components/AttributeBinding.vue'
+import LoopsAndConditionals from './components/LoopsAndConditionals.vue'
+import UserInput from './components/UserInput.vue'
+import FormBindings from './components/FormBindings.vue'
+import SimpleComponent from './components/SimpleComponent.vue'
+import RandomUser from './components/RandomUser.vue'
+import TodoMVC from './components/TodoMVC.vue'
+import SimpleCounter from './components/SimpleCounter.vue'
+import TempConvertor from './components/TempConvertor.vue'
+import FlightBooker from './components/FlightBooker.vue'
+
+import SimpleTimer from './components/SimpleTimer.vue'
+import SimpleCRUD from './components/SimpleCRUD.vue'
+
+*/
+
+import CircleDrawer from './components/CircleDrawer.vue'
 
 export default {
   name: 'App',
   components: {
     /*
     HelloWorld,
-    UserInput,
-    */
     AttributeBinding,
+    LoopsAndConditionals,
+    UserInput,
+    FormBindings,
+    SimpleComponent,
+    RandomUser,
+    TodoMVC,
+    SimpleCounter,
+    TempConvertor,
+
+    FlightBooker,
+    SimpleTimer,
+    SimpleCRUD,
+    */
+
+
+    CircleDrawer
   }
 }
 </script>
@@ -36,8 +79,8 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 </style>

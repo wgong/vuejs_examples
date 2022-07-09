@@ -9,9 +9,9 @@ This example demonstrates handling user input with the v-on directive.
     Note we don't need .value inside templates because
     refs are automatically "unwrapped" in templates.
   -->
-
    <h2>
-      <a href="https://vuejs.org/examples/#handling-input" target="new">{{title}}
+      <a href="https://vuejs.org/examples/#handling-input" target="new">
+      Handling User Input
       </a>
     </h2> 
 
