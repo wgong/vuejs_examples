@@ -44,7 +44,7 @@ export default {
   </table>
 </template>
 
-<style>
+<style scoped>
 body {
   margin: 0;
 }

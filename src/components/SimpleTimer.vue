@@ -34,7 +34,7 @@ export default {
     </h2> 
 
   <div>
-    Duration: <input type="range" v-model="duration" min="1" max="30000">
+    Duration: <input type="range" v-model="duration" min="1" max="3000000">
     {{ (duration / 1000).toFixed(1) }}s
   </div>
 
@@ -48,7 +48,7 @@ export default {
   <button @click="elapsed = 0">Reset</button>
 </template>
 
-<style>
+<style scoped>
 .elapsed-container {
   width: 300px;
 }
@@ -56,5 +56,16 @@ export default {
 .elapsed-bar {
   background-color: red;
   height: 10px;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  background: rgb(122, 190, 221);
+  color: rgb(27, 22, 22);
+  font-size: 12px;
+  border: 2px;
+  padding: 0.5rem 0.5rem;
+  margin: 5px;
 }
 </style>

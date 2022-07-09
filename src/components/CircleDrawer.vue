@@ -100,7 +100,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 body {
   margin: 0;
   overflow: hidden;
@@ -118,7 +118,7 @@ circle {
 
 .controls {
   position: fixed;
-  top: 10px;
+  top: 30px;
   left: 0;
   right: 0;
   text-align: center;
@@ -152,5 +152,17 @@ circle {
   text-align: center;
   padding: 0 50px;
   color: #bbb;
+}
+
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  background: rgb(122, 190, 221);
+  color: rgb(27, 22, 22);
+  font-size: 12px;
+  border: 2px;
+  padding: 0.5rem 0.5rem;
+  margin: 5px;
 }
 </style>

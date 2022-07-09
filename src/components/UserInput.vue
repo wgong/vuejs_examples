@@ -15,6 +15,7 @@ This example demonstrates handling user input with the v-on directive.
       </a>
     </h2> 
 
+<div>
     <label for="short_text">
         Enter a short message: 
     </label>
@@ -30,9 +31,12 @@ This example demonstrates handling user input with the v-on directive.
     Bind to a method/function.
     The @click syntax is short for v-on:click.
   -->
+</div>
     <button @click="reverseMessage">Reverse Message</button>
 
-    <label for="long_text">
+
+<div>
+      <label for="long_text">
         Leave a long comment: 
     </label>
     <textarea 
@@ -43,8 +47,11 @@ This example demonstrates handling user input with the v-on directive.
     </textarea>
 
 
+
+</div>
   <!-- Can also be an inline expression statement -->
   <button @click="comment += '!'">Append "!"</button>
+
 
   <!--
     Vue also provides modifiers for common tasks
@@ -77,10 +84,22 @@ export default {
 }
 </script>
 
-<style>
-button, a {
+<style scoped>
+a {
   display: block;
   margin-bottom: 1em;
   
 }
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  background: rgb(122, 190, 221);
+  color: rgb(27, 22, 22);
+  font-size: 12px;
+  border: 2px;
+  padding: 0.5rem 0.5rem;
+  margin: 5px;
+}
+
 </style>

@@ -79,7 +79,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 * {
   font-size: inherit;
 }
@@ -95,11 +95,15 @@ select {
   width: 14em;
 }
 
-.buttons {
-  clear: both;
-}
 
-button + button {
-  margin-left: 5px;
+button {
+  cursor: pointer;
+  display: inline-block;
+  background: rgb(122, 190, 221);
+  color: rgb(27, 22, 22);
+  font-size: 12px;
+  border: 2px;
+  padding: 0.5rem 0.5rem;
+  margin: 5px;
 }
 </style>

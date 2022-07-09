@@ -37,7 +37,7 @@ export default {
     canBook() {
       return (
         !this.isReturn ||
-        stringToDate(this.returnDate) > stringToDate(this.departureDate)
+        stringToDate(this.returnDate) >= stringToDate(this.departureDate)
       )
     }
   },
@@ -72,10 +72,9 @@ export default {
   <p>{{ canBook ? '' : 'Return date must be after departure date.' }}</p>
 </template>
 
-<style>
+<style scoped>
 select,
-input,
-button {
+input {
   display: block;
   margin: 0.5em 0;
   font-size: 15px;
@@ -87,5 +86,16 @@ input[disabled] {
 
 p {
   color: red;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  background: rgb(122, 190, 221);
+  color: rgb(27, 22, 22);
+  font-size: 12px;
+  border: 2px;
+  padding: 0.5rem 0.5rem;
+  margin: 5px;
 }
 </style>
