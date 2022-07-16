@@ -2,7 +2,30 @@
 This example demonstrates handling user input with the v-on directive.
 -->
 
-
+<script>
+export default {
+  // props: {
+  //   title: String,
+  //   url: String
+  // },    
+  data() {
+    return {
+      title: "Handling User Input",
+      url: "https://vuejs.org/examples/#handling-input",
+      message: 'Welcome to Vue world',
+      comment: "Awesome Vue JS"
+    }
+  },
+  methods: {
+    reverseMessage() {
+      this.message = this.message.split('').reverse().join('')
+    },
+    notify() {
+      alert('navigation was prevented.')
+    }
+  }
+}
+</script>
 
 <template>
   <!--
@@ -10,9 +33,7 @@ This example demonstrates handling user input with the v-on directive.
     refs are automatically "unwrapped" in templates.
   -->
    <h2>
-      <a href="https://vuejs.org/examples/#handling-input" target="new">
-      Handling User Input
-      </a>
+      <a :href="url" target="new">{{title}}</a>
     </h2> 
 
 <div>
@@ -52,6 +73,11 @@ This example demonstrates handling user input with the v-on directive.
   <!-- Can also be an inline expression statement -->
   <button @click="comment += '!'">Append "!"</button>
 
+<div>
+  Update Titile Link URL:
+<input type="text" v-model="url" size="60">
+</div>
+
 
   <!--
     Vue also provides modifiers for common tasks
@@ -62,27 +88,7 @@ This example demonstrates handling user input with the v-on directive.
   </a>
 </template>
 
-<script>
-export default {
-  props: {
-    title: String
-  },    
-  data() {
-    return {
-      message: 'Welcome to Vue world',
-      comment: "Awesome Vue JS"
-    }
-  },
-  methods: {
-    reverseMessage() {
-      this.message = this.message.split('').reverse().join('')
-    },
-    notify() {
-      alert('navigation was prevented.')
-    }
-  }
-}
-</script>
+
 
 <style scoped>
 a {

@@ -6,21 +6,30 @@
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
+
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
     </ul>
+
     <h3>Essential Links</h3>
     <ul>
       <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
       <li><a href="https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf" target="_blank" rel="noopener">Vue Cheatsheet</a></li>
-      
       <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
       <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
       <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
       <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
     </ul>
+
+    <h3>Tutorials</h3>
+    <ul>
+      <li><a href="https://youtu.be/bzlFvd0b65c" target="_blank" rel="noopener">Vue mastery - Product Cart</a></li>
+      <li><a href="https://youtu.be/qZXt1Aom3Cs" target="_blank" rel="noopener">Vue crash course by Brad Traversy</a></li>
+      <li><a href="https://github.com/bradtraversy/vue-crash-2021/tree/master/src" target="_blank" rel="noopener">Task tracker by Brad Traversy</a></li>
+    </ul>
+
     <h3>Ecosystem</h3>
     <ul>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>

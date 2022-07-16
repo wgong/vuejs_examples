@@ -16,6 +16,16 @@ Select component to demo:
     <option>SimpleTimer</option>
     <option>SimpleCRUD</option>
     <option>CircleDrawer</option>
+    <option>FetchGitHub</option>
+    <option>DemoGrid</option>
+    <option>TreeView</option>
+    <option>QTreeTab</option>
+    
+
+<!--  DEBUG
+  
+    <option>MarkdownEditor</option>
+-->    
   </select>
 <br><hr>
 
@@ -25,7 +35,9 @@ Select component to demo:
   <TempConvertor v-else-if="selectedComp === 'TempConvertor'"/>
   <AttributeBinding v-else-if="selectedComp === 'AttributeBinding'"/>
   <LoopsAndConditionals v-else-if="selectedComp === 'LoopsAndConditionals'"/>
-  <UserInput v-else-if="selectedComp === 'UserInput'"/>
+  <UserInput v-else-if="selectedComp === 'UserInput'" 
+
+    />
   <FormBindings v-else-if="selectedComp === 'FormBindings'"/>
   <SimpleComponent v-else-if="selectedComp === 'SimpleComponent'"/>
   <RandomUser v-else-if="selectedComp === 'RandomUser'"/>
@@ -34,11 +46,21 @@ Select component to demo:
   <SimpleTimer v-else-if="selectedComp === 'SimpleTimer'"/>
   <SimpleCRUD v-else-if="selectedComp === 'SimpleCRUD'"/>
   <CircleDrawer v-else-if="selectedComp === 'CircleDrawer'"/>
-  <HelloWorld v-else msg="Welcome to Your Vue.js App"/>
+  <FetchGitHub v-else-if="selectedComp === 'FetchGitHub'"/>
+  <DemoGrid v-else-if="selectedComp === 'DemoGrid'"/> 
+  <QTreeTab v-else-if="selectedComp === 'QTreeTab'"/>   
+  
+<!--  DEBUG
+  <TreeView v-else-if="selectedComp === 'TreeView'"/>   
+-->  
 
 
-    
-    
+
+<HelloWorld v-else msg="Welcome to Your Vue.js App"/>
+
+
+
+
 
 
 
@@ -51,8 +73,11 @@ Select component to demo:
 </template>
 
 <script>
-/*
+/* DEBUG
+import TreeView from './components/TreeView.vue' 
+import MarkdownEditor from './components/MarkdownEditor.vue'
 */
+
 
 import HelloWorld from './components/HelloWorld.vue'
 import SimpleCounter from './components/SimpleCounter.vue'
@@ -68,6 +93,9 @@ import FlightBooker from './components/FlightBooker.vue'
 import SimpleTimer from './components/SimpleTimer.vue'
 import SimpleCRUD from './components/SimpleCRUD.vue'
 import CircleDrawer from './components/CircleDrawer.vue'
+import FetchGitHub from './components/FetchGitHub.vue'
+import DemoGrid from './components/DemoGrid.vue'
+import QTreeTab from './components/QTreeTab.vue' 
 
 
 export default {
@@ -78,8 +106,12 @@ export default {
     }
   },
   components: {
-    /*
+    /* DEBUG
+    TreeView,
+    MarkdownEditor,
+
     */
+   QTreeTab,
     AttributeBinding,
     LoopsAndConditionals,
     UserInput,
@@ -88,6 +120,8 @@ export default {
     RandomUser,
     TodoMVC,
     CircleDrawer,
+    FetchGitHub,
+    DemoGrid,
     FlightBooker,
     SimpleTimer,
     SimpleCRUD,
